@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: exam-web-config
+  namespace: exam-k8s
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exam Web</title>
+    </head>
+    <body>
+        <h1>Привет!</h1>
+        <p>Студент: Олейников Андрей, группа M4106</p>
+        <p>Версия приложения: v1.0.0</p>
+    </body>
+    </html>
